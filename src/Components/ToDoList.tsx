@@ -1,11 +1,35 @@
-import { useState } from "react";
+import { useState , useReducer } from "react";
 import './ToDoList.css'
 
+// interface Task{
+//     task:string,
+//     taskList : {
+//         ctask : string,
+//         isdone : boolean
+//     }[]
+// }
+
+// const reducer = (state : Task,action) =>{
+//     switch(action.type){
+
+
+//     default:
+//         return state;
+// }
 const ToDoList = () => {
 
     const [taskList,setTaskList] = useState<{task:string,isdone:boolean}[]>([]);
     const [task,setTask] = useState("");
-    
+
+    // const [state,dispatch] = useReducer(reducer,{
+    //     task : "",
+    //     taskList : [
+    //         {
+    //             ctask : "",
+    //             isdone : false
+    //         }
+    //     ]
+    // })
     const addtask = () => {
         const newtask : string = task;
         const newstate : boolean = false;

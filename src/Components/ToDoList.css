@@ -1,5 +1,7 @@
 .main-div{
-    background-color: blanchedalmond;
+    background: linear-gradient(to bottom,green,silver,white,silver,red);
+    /* background-color: blanchedalmond; */
+    background-attachment: fixed;
     padding: 100px;
     margin:50px;
     padding-top: 50px;
