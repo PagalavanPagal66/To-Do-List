@@ -30,6 +30,7 @@ const ToDoList = () => {
     //         }
     //     ]
     // })
+
     const addtask = () => {
         const newtask : string = task;
         const newstate : boolean = false;
